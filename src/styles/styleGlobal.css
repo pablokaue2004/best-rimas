@@ -1,0 +1,26 @@
+.slide-out {
+  .text-container {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  }
+}
+
+.text-container {
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animated-slide-in {
+  animation: slideIn 0.5s ease-out;
+}
